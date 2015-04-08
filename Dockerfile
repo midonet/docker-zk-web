@@ -8,6 +8,8 @@ ADD https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein /bin
 RUN chmod 755 /bin/lein
 
 ENV LEIN_ROOT=yes
+# Pre-initialize leiningan
+RUN lein
 
 RUN git clone https://github.com/qiuxiafei/zk-web.git
 
