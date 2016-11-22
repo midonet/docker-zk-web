@@ -11,7 +11,7 @@ ENV LEIN_ROOT=yes
 # Pre-initialize leiningan
 RUN lein
 
-RUN git clone https://github.com/qiuxiafei/zk-web.git
+RUN git clone https://github.com/gkalel/zk-web.git
 
 WORKDIR /zk-web
 
