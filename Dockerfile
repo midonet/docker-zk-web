@@ -17,4 +17,7 @@ WORKDIR /zk-web
 
 EXPOSE 8080
 
+# Prefetch lein clojure dependencies to avoid repeatedly fetching them every Docker run
+RUN lein deps
+
 ENTRYPOINT lein run
